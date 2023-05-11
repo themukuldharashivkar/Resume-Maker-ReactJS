@@ -5,10 +5,10 @@ import {Link} from 'react-router-dom'
 function NavBar(){
     return(
       
-        <div style={{backgroundColor:'#ffbf00',color:'#0f52ba',zIndex:10}}>
+        <div style={{backgroundColor:'#222021',color:'#ffbf00',zIndex:10}} className='p-2'>
             <nav className="navbar navbar-expand-lg navbar-light p-0 m-0 " >
                 <div className="container-fluid  ">
-                  <div className="navbar-brand d-flex align-items-center" style={{color:'#0f52ba',fontSize:'30px', fontWeight:"600"}}>
+                  <div className="navbar-brand d-flex align-items-center" style={{color:'#ffbf00',fontSize:'30px', fontWeight:"600"}}>
                     <div className='me-3 mb-2'><FileEarmarkTextFill/></div>
                     <div>Resume Builder</div>
                   </div>
@@ -20,15 +20,15 @@ function NavBar(){
                     <div className="navbar-nav mb-2 ms-5 ">
                       <li className="nav-item">
                       {/* /*this link will show the Home page */}
-                        <Link to='/' className="nav-link active me-4" style={{textDecoration:'none',color:'#0f52ba',fontSize:"20px"}}>Resume Templates</Link> 
+                        <Link to='/' className="nav-link active me-4" style={{textDecoration:'none',color:'#ffbf00',fontSize:"20px"}}>Template</Link> 
                       </li>
                       <li className="nav-item">
                         {/* this link will show the MyResume page displaying the preview of the resume created by the user. */}
-                        <Link to='/myresume' className="nav-link active me-4" style={{textDecoration:'none',color:'#0f52ba',fontSize:"20px"}} >My Resume</Link>
+                        <Link to='/myresume' className="nav-link active me-4" style={{textDecoration:'none',color:'#ffbf00',fontSize:"20px"}} >Resume</Link>
                       </li>
                       <li className="nav-item">
                         {/* this link will show the About Us page. */}
-                        <Link to='/about' className="nav-link active " style={{textDecoration:'none',color:'#0f52ba',fontSize:"20px"}}>About Us</Link>
+                        <Link to='/about' className="nav-link active " style={{textDecoration:'none',color:'#ffbf00',fontSize:"20px"}}>About</Link>
                       </li>
                     </div>
                   </div>
